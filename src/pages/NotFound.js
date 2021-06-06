@@ -1,18 +1,22 @@
 import React from "react";
 
 import Header from "parts/Header";
-import PageErrorMasage from "parts/PageErrorMasage";
+import PageErrorMessage from "parts/PageErrorMessage";
 
+import Sitemap from "parts/Sitemap";
 import Footer from "parts/Footer";
-import Sitemap from "parts/HomePage/Sitemap";
+
+import Document from "parts/Document";
 
 export default function NotFound() {
   return (
-    <>
+    <Document>
       <Header theme="black" />
-      <PageErrorMasage />
+
+      <PageErrorMessage />
+
       <Sitemap />
       <Footer />
-    </>
+    </Document>
   );
 }
